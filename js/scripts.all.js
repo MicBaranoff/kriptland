@@ -21,9 +21,7 @@ $(document).ready(function(){
 
     $(window).on('scroll', function(){
         var scrolled = $(window).scrollTop();
-        console.log(scrolled);
         $('section.anchorp').each(function(){
-
             if($(this).offset().top <= scrolled){
                 $('.menufix nav a').removeClass('active');
                 $('.menufix nav').find('a[href="#'+ $(this).attr('id') +'"]').addClass('active');
@@ -42,6 +40,5 @@ $(document).ready(function(){
 		}, 700);
 });
 
-    console.log('12121212');
 });
 },{}]},{},[1]);

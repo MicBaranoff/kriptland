@@ -126,7 +126,7 @@ main {
 }
 html,
 body {
-  overflow-x: hidden;
+  overflow-x: hidden!important;
 }
 body {
   margin: 0;
@@ -166,7 +166,7 @@ h2.secTitle {
 .menufix {
   position: fixed;
   z-index: 999;
-  top: 100px;
+  bottom: 70px;
   left: -50px;
   -webkit-transition: all 0.5s ease-in-out;
   -o-transition: all 0.5s ease-in-out;
@@ -500,6 +500,9 @@ section.iosandroid .holder .right {
       -ms-flex-align: end;
           align-items: flex-end;
 }
+section.iosandroid .holder .right .img {
+  margin-right: 10px;
+}
 section.activebag {
   width: 100%;
   padding: 0 15px;
@@ -643,6 +646,7 @@ section.ordersreverse .holder .reverse {
 section.ordersreverse .holder .reverse .left {
   width: 100%;
   max-width: 500px;
+  margin-right: 20px;
 }
 section.ordersreverse .holder .reverse .left p.tit {
   display: block;
@@ -1080,6 +1084,7 @@ section.logoscect .holder .box {
 section.logoscect .holder .box .img {
   width: 100%;
   max-width: 600px;
+  margin-right: 20px;
 }
 section.logoscect .holder .box .img img {
   width: 100%;
@@ -1319,6 +1324,7 @@ section.community .holder .comm_table .trow a.btn:hover {
 section.community .holder .text {
   max-width: 500px;
   position: relative;
+  margin-left: 20px;
 }
 section.community .holder .text .text_bg {
   position: absolute;
@@ -1766,6 +1772,7 @@ section.profitsave .holder .sendTo .box .selectbtn .jq-selectbox__trigger .jq-se
 }
 .notification_box .holder img {
   margin-right: 10px;
+  max-height: 40px;
 }
 .notification_box .holder span {
   font-family: Roboto;
@@ -2256,6 +2263,7 @@ section.functions .holder .tab_box .tab_item {
 section.functions .holder .tab_box .tab_item .img {
   width: 100%;
   max-width: 410px;
+  margin-right: 10px;
 }
 section.functions .holder .tab_box .tab_item .img img {
   width: 100%;
@@ -2419,4 +2427,1008 @@ section.qrcodes .holder .box .item p {
 }
 section.qrcodes .holder .box .item img.qr {
   width: 100%;
+}
+@media screen and (max-width: 1350px) {
+  section.counter .holder {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  section.counter .holder > span {
+    margin: 10px;
+  }
+  section.counter .holder a.btny {
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  section.advantages {
+    padding-top: 150px;
+  }
+  section.advantages .holder {
+    max-width: 1024px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  section.advantages .holder .text {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .menufix {
+    display: none;
+  }
+  section.buycript {
+    padding-top: 100px;
+  }
+  section.buycript .holder {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  section.buycript .holder .left {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 50px;
+  }
+  section.buycript .holder .left img {
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+  section.buycript .holder .left .text {
+    text-align: center;
+  }
+  section.buycript .holder .left .text .socials {
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+  section.buycript .holder .right {
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  section.buycript .holder .right .item {
+    margin: 0 10px;
+  }
+  section.iosandroid {
+    padding-top: 150px;
+  }
+  section.iosandroid .holder {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  section.iosandroid .holder .left,
+  section.iosandroid .holder .right {
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-top: 0;
+  }
+  section.iosandroid .holder .left .img,
+  section.iosandroid .holder .right .img {
+    width: 290px;
+  }
+  section.iosandroid .holder .left .img img,
+  section.iosandroid .holder .right .img img {
+    width: 100%;
+  }
+  section.activebag {
+    padding-top: 150px;
+  }
+  section.activebag .holder .img {
+    width: 100%;
+    max-width: 500px;
+    margin-right: 10px;
+  }
+  section.activebag .holder .img img {
+    width: 100%;
+  }
+  section.logoscect {
+    padding-top: 150px;
+  }
+  section.logoscect .holder .box .img {
+    max-width: 400px;
+  }
+  section.community {
+    padding-top: 150px;
+  }
+  section.community .secTitle {
+    margin-bottom: 50px;
+  }
+  section.community .holder {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -webkit-flex-direction: column-reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  section.community .holder .text {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  section.webversion {
+    padding-top: 150px;
+  }
+  section.webversion .secTitle {
+    margin-bottom: 50px;
+  }
+  section.webversion .holder .img {
+    width: 100%;
+    max-width: 400px;
+  }
+  section.webversion .holder .img img {
+    width: 100%;
+  }
+  section.analitics {
+    padding-top: 150px;
+  }
+  section.analitics .holder .analitics_box .inner-block {
+    margin-right: 20px;
+  }
+  section.profitsave {
+    padding-top: 150px;
+  }
+  section.advantages {
+    padding-top: 150px;
+  }
+  section.advantages .secTitle {
+    margin-bottom: 50px;
+  }
+  section.advantages .secTitle img {
+    display: none;
+  }
+  section.advantages .holder {
+    max-width: 1024px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  section.advantages .holder .text {
+    margin-bottom: 30px;
+  }
+  section.analize {
+    padding-top: 150px;
+  }
+  section.analize .holder {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  section.analize .holder .item {
+    margin-bottom: 40px;
+  }
+  section.infolist {
+    padding-top: 150px;
+  }
+  section.infolist .holder .box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  section.infolist .holder .box .list {
+    max-width: none;
+  }
+  section.infolist .holder .box .list .item:last-child {
+    margin-bottom: 30px;
+  }
+  section.telegram_terminal {
+    padding-top: 150px;
+  }
+  section.telegram_terminal .holder {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  section.telegram_terminal .holder .item {
+    max-width: 550px;
+  }
+  section.telegram_terminal .holder .item:nth-child(2) {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -webkit-flex-direction: column-reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  section.qrcodes {
+    padding-top: 150px;
+  }
+  section.qrcodes .holder {
+    border-radius: 20px;
+  }
+  section.qrcodes .holder .box {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  section.qrcodes .holder .box .item {
+    margin: 20px;
+    margin-bottom: 70px;
+    margin-top: 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  h2.secTitle {
+    font-size: 38px;
+  }
+  section.buycript .holder .left > img {
+    width: 150px;
+    height: 150px;
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+  section.activebag .holder {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -webkit-flex-direction: column-reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  section.activebag .holder .img {
+    width: 100%;
+    max-width: 500px;
+    margin-right: 0;
+    margin-top: 40px;
+  }
+  section.activebag .holder .img img {
+    width: 100%;
+  }
+  section.ordersreverse {
+    padding-top: 150px;
+  }
+  section.ordersreverse .holder .orders {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 50px;
+  }
+  section.ordersreverse .holder .orders .text h3 {
+    font-size: 32px;
+  }
+  section.ordersreverse .holder .reverse {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  section.ordersreverse .holder .reverse .right .tabl .btns a.btngr {
+    margin-right: 10px;
+  }
+  section.logoscect {
+    padding-top: 150px;
+  }
+  section.logoscect .holder {
+    padding: 50px 20px;
+    padding-bottom: 0;
+    border-radius: 20px;
+  }
+  section.logoscect .holder .box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -webkit-flex-direction: column-reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 50px;
+  }
+  section.logoscect .holder .box .text {
+    text-align: center;
+  }
+  section.logoscect .holder .box .text h2.secTitle {
+    text-align: center;
+  }
+  section.logoscect .holder .box .img {
+    max-width: 400px;
+    margin-right: 0;
+    margin-top: 30px;
+  }
+  section.community .holder .text h3 {
+    font-size: 32px;
+  }
+  section.community .holder .text p {
+    font-size: 14px;
+  }
+  section.community .holder .comm_table .comm_table_title {
+    padding-left: 10px;
+    padding-right: 15%;
+  }
+  section.community .holder .comm_table .comm_table_title span {
+    font-size: 14px;
+  }
+  section.community .holder .comm_table .trow {
+    padding: 10px;
+  }
+  section.community .holder .comm_table .trow .rank {
+    margin-right: 7px;
+  }
+  section.community .holder .comm_table .trow .name {
+    max-width: 100px;
+    margin-right: 20px;
+  }
+  section.community .holder .comm_table .trow .name img {
+    width: 30px;
+    height: 30px;
+    margin-right: 8px;
+  }
+  section.community .holder .comm_table .trow .name span {
+    font-size: 12px;
+  }
+  section.community .holder .comm_table .trow .inamonth {
+    min-width: 90px;
+    margin-right: 20px;
+  }
+  section.community .holder .comm_table .trow .inamonth svg {
+    width: 10px;
+    height: 5px;
+  }
+  section.community .holder .comm_table .trow .inamonth span {
+    font-size: 12px;
+  }
+  section.community .holder .comm_table .trow .trades {
+    min-width: 50px;
+    margin-right: 20px;
+  }
+  section.community .holder .comm_table .trow .trades span {
+    font-size: 18px;
+  }
+  section.community .holder .comm_table .trow a.btn {
+    padding: 10px 13px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  section.webversion .holder {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  section.webversion .holder .img {
+    margin-top: 30px;
+    width: 100%;
+    max-width: 550px;
+  }
+  section.webversion .holder .img img {
+    width: 100%;
+  }
+  section.analitics .holder .text h3 {
+    font-size: 32px;
+  }
+  section.analitics .holder .text p {
+    font-size: 14px;
+  }
+  section.analitics .holder .analitics_box {
+    border-radius: 20px;
+    padding: 20px;
+  }
+  section.analitics .holder .analitics_box .gr_box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  section.analitics .holder .analitics_box .coin-price {
+    margin-bottom: 5px;
+  }
+  section.analitics .holder .analitics_box .inner-block {
+    width: 100%;
+    margin-right: 0px;
+    margin-bottom: 0;
+  }
+  section.analitics .holder .analitics_box .inner-block .flex-p-wrap {
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  section.analitics .holder .analitics_box .inner-block .flex-p-wrap .col-1-6 {
+    width: 33.3%;
+    margin-bottom: 25px;
+  }
+  section.profitsave {
+    padding-top: 150px;
+  }
+  section.profitsave .holder {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  section.profitsave .holder .info_rows {
+    margin-right: 0;
+  }
+  .notification_box .holder {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .notification_box .holder img {
+    width: 40px;
+    margin-bottom: 10px;
+    margin-right: 0;
+  }
+  .notification_box .holder span {
+    font-size: 16px;
+  }
+  section.counter .holder {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 10px;
+  }
+  section.counter .holder > span {
+    margin-bottom: 20px;
+  }
+  section.counter .holder .list {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  section.counter .holder .list svg {
+    margin: 0;
+    margin-bottom: 8px;
+    -webkit-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+  section.counter .holder .list .item {
+    margin: 0;
+    margin-bottom: 20px;
+  }
+  section.counter .holder .list .item:last-child {
+    margin-left: 0;
+  }
+  section.counter .holder .list .item:first-child {
+    margin-bottom: 8px;
+  }
+  section.counter .holder a.btny {
+    margin-top: 20px;
+    font-size: 16px;
+  }
+  section.advantages {
+    padding-top: 150px;
+  }
+  section.advantages .secTitle {
+    margin-bottom: 50px;
+  }
+  section.advantages .secTitle img {
+    display: none;
+  }
+  section.advantages .holder {
+    max-width: 1024px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  section.advantages .holder .text {
+    margin-bottom: 30px;
+  }
+  section.advantages .holder .text h3 {
+    font-size: 32px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .text h3 {
+    font-size: 32px;
+  }
+  .text p {
+    font-size: 14px;
+  }
+  section.iosandroid {
+    padding-top: 150px;
+  }
+  section.iosandroid .holder {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  section.iosandroid .holder .left,
+  section.iosandroid .holder .right {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-top: 0;
+    text-align: center;
+  }
+  section.iosandroid .holder .left .img,
+  section.iosandroid .holder .right .img {
+    width: 290px;
+  }
+  section.iosandroid .holder .left .img img,
+  section.iosandroid .holder .right .img img {
+    width: 100%;
+  }
+  section.iosandroid .holder .right {
+    margin-top: 40px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -webkit-flex-direction: column-reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  section.ordersreverse {
+    padding-top: 150px;
+  }
+  section.ordersreverse .holder .orders {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 50px;
+  }
+  section.ordersreverse .holder .orders .text h3 {
+    font-size: 32px;
+  }
+  section.ordersreverse .holder .orders .text p {
+    font-size: 14px;
+  }
+  section.ordersreverse .holder .reverse {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  section.ordersreverse .holder .reverse .left .text {
+    margin-bottom: 30px;
+  }
+  section.ordersreverse .holder .reverse .left .text p {
+    font-size: 14px;
+  }
+  section.ordersreverse .holder .reverse .right {
+    padding: 20px;
+  }
+  section.ordersreverse .holder .reverse .right .tabl {
+    padding: 0;
+  }
+  section.ordersreverse .holder .reverse .right .tabl .box .nums .item p {
+    font-size: 12px;
+  }
+  section.ordersreverse .holder .reverse .right .tabl .btns a.btngr {
+    margin-right: 10px;
+  }
+  section.activebag h2.secTitle {
+    margin-bottom: 50px;
+  }
+  section.activebag .holder .text .item {
+    margin-bottom: 30px;
+  }
+  section.activebag .holder .text .item p {
+    font-size: 14px;
+  }
+  section.activebag .holder .text .item h3 {
+    font-size: 32px;
+  }
+  section.community .holder .text h3 {
+    font-size: 32px;
+  }
+  section.community .holder .text p {
+    font-size: 14px;
+  }
+  section.community .holder .comm_table .comm_table_title {
+    padding-right: 23%;
+  }
+  section.community .holder .comm_table .comm_table_title span:last-child {
+    display: none;
+  }
+  section.community .holder .comm_table .trow .rank {
+    font-size: 14px;
+    padding: 10px;
+  }
+  section.community .holder .comm_table .trow .name {
+    margin-right: 10px;
+    width: 55px;
+  }
+  section.community .holder .comm_table .trow .name span {
+    font-size: 10px;
+  }
+  section.community .holder .comm_table .trow .name img {
+    display: none;
+  }
+  section.community .holder .comm_table .trow .inamonth {
+    margin-right: 10px;
+    min-width: 70px;
+  }
+  section.community .holder .comm_table .trow .inamonth span {
+    font-size: 10px;
+  }
+  section.community .holder .comm_table .trow .favpair {
+    display: none;
+  }
+  section.community .holder .comm_table .trow .trades {
+    margin-right: 5px;
+    min-width: 35px;
+  }
+  section.community .holder .comm_table .trow .trades span {
+    font-size: 12px;
+  }
+  section.webversion .holder {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  section.webversion .holder .img {
+    margin-top: 30px;
+    width: 100%;
+    max-width: 550px;
+  }
+  section.webversion .holder .img img {
+    width: 100%;
+  }
+  section.webversion .holder .text h3 {
+    font-size: 32px;
+  }
+  section.webversion .holder .text p {
+    font-size: 14px;
+  }
+  section.profitsave {
+    padding-top: 150px;
+  }
+  section.profitsave .holder .sendTo {
+    padding: 20px;
+  }
+  section.profitsave .holder .sendTo .box > p {
+    line-height: 40px;
+  }
+  section.advantages {
+    padding-top: 150px;
+  }
+  section.advantages .secTitle {
+    margin-bottom: 50px;
+    font-size: 34px;
+  }
+  section.advantages .secTitle img {
+    display: none;
+  }
+  section.advantages .holder {
+    max-width: 1024px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  section.advantages .holder .steps {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0 15px;
+  }
+  section.advantages .holder .steps .item {
+    width: 100%;
+    max-width: 320px;
+    margin-bottom: 50px;
+  }
+  section.advantages .holder .steps .item .box {
+    min-height: 0;
+  }
+  section.analize .holder {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  section.analize .holder .item {
+    margin-bottom: 40px;
+  }
+  section.analize .holder .item h3 {
+    font-size: 32px;
+  }
+  section.analize .holder .item p {
+    font-size: 14px;
+  }
+  section.infolist {
+    padding-top: 150px;
+  }
+  section.infolist .holder {
+    border-radius: 20px;
+    padding: 20px;
+  }
+  section.infolist .holder .box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  section.infolist .holder .box .list {
+    max-width: none;
+  }
+  section.infolist .holder .box .list .item:last-child {
+    margin-bottom: 30px;
+  }
+  section.functions .holder .tab_nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  section.functions .holder .tab_box .tab_item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -webkit-flex-direction: column-reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+}
+@media screen and (max-width: 425px) {
+  section.buycript {
+    padding-top: 100px;
+  }
+  section.buycript .holder {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  section.buycript .holder .left {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 50px;
+  }
+  section.buycript .holder .left > img {
+    width: 150px;
+    height: 150px;
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+  section.buycript .holder .left .text {
+    text-align: center;
+  }
+  section.buycript .holder .left .text .socials {
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+  section.buycript .holder .right {
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+  }
+  section.buycript .holder .right .item {
+    margin: 0 10px;
+  }
+}
+@media screen and (max-width: 375px) {
+  section.analitics .text {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+  }
+  section.analitics .text h3 {
+    font-size: 32px;
+  }
+  section.analitics .text p {
+    font-size: 14px;
+  }
+  section.analitics .holder .analitics_box {
+    border-radius: 20px;
+    padding: 20px;
+  }
+  section.analitics .holder .analitics_box .gr_box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  section.analitics .holder .analitics_box .inner-block {
+    width: 100%;
+    margin-right: 0px;
+    margin-bottom: 0;
+  }
+  section.analitics .holder .analitics_box .inner-block .flex-p-wrap {
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  section.analitics .holder .analitics_box .inner-block .flex-p-wrap .col-1-6 {
+    width: 48%;
+  }
+  section.profitsave {
+    padding-top: 150px;
+  }
+  section.profitsave .holder {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  section.profitsave .holder .info_rows {
+    margin-right: 0;
+  }
+  section.profitsave .holder .info_rows .item img {
+    width: 30px;
+    height: 30px;
+    margin-right: 15px;
+  }
 }
