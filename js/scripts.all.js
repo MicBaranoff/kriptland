@@ -40,5 +40,17 @@ $(document).ready(function(){
 		}, 700);
 });
 
+$('.tab_item').hide();
+$('.tab_item:first-child').show();
+
+$('.tab_nav span').on('click', function(){
+    $('.tab_nav span').removeClass('active');
+    $(this).addClass('active');
+    let id =  $(this).index() + 1;
+    $('.tab_box .tab_item').hide();
+    $('.tab_box .tab_item:nth-child('+ id +')').fadeIn();
+
+});
+
 });
 },{}]},{},[1]);
