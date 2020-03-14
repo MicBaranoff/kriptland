@@ -163,6 +163,26 @@ h2.secTitle {
   text-align: center;
   color: #EDF5FF;
 }
+@-webkit-keyframes pulse {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  to {
+    -webkit-transform: scale(1.07);
+            transform: scale(1.07);
+  }
+}
+@keyframes pulse {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  to {
+    -webkit-transform: scale(1.07);
+            transform: scale(1.07);
+  }
+}
 .menufix {
   position: fixed;
   z-index: 999;
@@ -313,6 +333,10 @@ section.buycript .holder .left {
 }
 section.buycript .holder .left img {
   margin-right: 50px;
+}
+section.buycript .holder .left .plogo {
+  -webkit-animation: pulse 1s ease-in-out 1s infinite alternate;
+          animation: pulse 1s ease-in-out 1s infinite alternate;
 }
 section.buycript .holder .left .text {
   width: 100%;
@@ -3047,6 +3071,9 @@ section.qrcodes .holder .box .item img.qr {
   }
   section.advantages .holder .text h3 {
     font-size: 32px;
+  }
+  section.qrcodes .holder .secTitle {
+    font-size: 34px;
   }
 }
 @media screen and (max-width: 550px) {
